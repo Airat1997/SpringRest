@@ -18,4 +18,10 @@ public class ProductService {
     public  Iterable<Product> findAllByProductAvailability(Boolean productAvailability){
         return productRepository.findByProductAvailability(productAvailability);
     }
+    public  Iterable<Product> findAllByOrderByPriceAsc(){
+        return productRepository.findAllByOrderByPriceAsc();
+    }
+    public  Iterable<Product> findAllByOrderByPriceDesc(){
+        return productRepository.findAllByOrderByPriceDesc();
+    }
 }

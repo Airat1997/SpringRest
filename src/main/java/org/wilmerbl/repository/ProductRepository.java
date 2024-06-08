@@ -10,4 +10,6 @@ import org.wilmerbl.model.Product;
 public interface ProductRepository extends CrudRepository<Product, UUID> {
     @Query("SELECT p FROM Product p WHERE p.productAvailability = :productAvailability")
     Iterable<Product> findByProductAvailability(@Param("productAvailability") Boolean productAvailability);
+    Iterable<Product> findAllByOrderByPriceAsc();
+    Iterable<Product> findAllByOrderByPriceDesc();
 }
