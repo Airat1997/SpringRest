@@ -1,0 +1,21 @@
+INSERT INTO product (id, name, description, price, product_availability)
+VALUES
+(gen_random_uuid(), 'Pen', 'Портативная ручка', 5670.00, true),
+(gen_random_uuid(), 'Table', 'Стол с деревянным столешницей', 3515432520.00, false),
+(gen_random_uuid(), 'Computer', 'Процессор: Intel Core i7, RAM: 16GB', 20350.00, true),
+(gen_random_uuid(), 'Laptop', 'Диагональ экрана: 15.6 дюйма, Операционная система: Windows 10', 21360.00, false),
+(gen_random_uuid(), 'Headphones', 'Тип: Наушники, Батарея: 20 часов работы', 1500.00, true),
+(gen_random_uuid(), 'Smartphone', 'Операционная система: Android, Диагональ экрана: 6.5 дюйма', 4500.00, true),
+(gen_random_uuid(), 'Book', 'Автор: Иван Иванов, Жанр: Роман', 1200.00, false),
+(gen_random_uuid(), 'Shoes', 'Размер: 42, Материал: Кожа', 3000.00, true),
+(gen_random_uuid(), 'Watch', 'Материал: Сталь, Тип: Механическая', 2500.00, false),
+(gen_random_uuid(), 'Camera', 'Резолюция: 12MP, Формат карты памяти: SD', 8000.00, true),
+(gen_random_uuid(), 'TV', 'Размер экрана: 55 дюймов, Технология: LED', 100000.00, false),
+(gen_random_uuid(), 'Gaming Console', 'Консоль: PlayStation 5, Графика: 4K', 400.00, true),
+(gen_random_uuid(), 'Sport Shoes', 'Бренд: Nike, Тип: Беговые', 1800.00, true),
+(gen_random_uuid(), 'Jacket', 'Сезон: Зима, Материал: Пух и перо', 5000.00, false),
+(gen_random_uuid(), 'Bag', 'Материал: Синтетика, Размер: Средний', 2000.00, true),
+(gen_random_uuid(), 'Sunglasses', 'Стиль: Строгий, Цвет: Черный', 700.00, true),
+(gen_random_uuid(), 'Kitchen Set', 'Количество предметов: 8, Материал: Стекло', 15000.00, false),
+(gen_random_uuid(), 'Furniture', 'Тип: Диван, Материал: Дерево', 35000.00, true),
+(gen_random_uuid(), 'Toy', 'Тип: Робот-пес, Возраст: 6+', 300.00, true);

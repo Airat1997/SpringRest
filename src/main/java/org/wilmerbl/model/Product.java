@@ -1,12 +1,21 @@
 package org.wilmerbl.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import java.util.UUID;
-
+@Entity
 public class Product {
+    @Id
+    @Column(name = "id")
     private UUID id;
+    @Column(name = "name", length = 256)
     private String name;
+    @Column(name = "description", length = 4096)
     private String description;
+    @Column(name = "price")
     private Double price;
+    @Column(name = "product_availability")
     private Boolean productAvailability;
     public Product(){};
     public Product(UUID id, String name, String description, Double price, Boolean productAvailability){
