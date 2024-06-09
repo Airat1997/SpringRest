@@ -2,12 +2,16 @@ package org.wilmerbl.model;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import java.util.UUID;
+import org.hibernate.annotations.GenericGenerator;
+
 @Entity
 public class Product {
     @Id
     @Column(name = "id")
+    @GeneratedValue(generator = "UUID")
     private UUID id;
     @Column(name = "name", length = 256)
     private String name;

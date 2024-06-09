@@ -8,6 +8,5 @@ import org.springframework.stereotype.Repository;
 import org.wilmerbl.model.Product;
 @Repository
 public interface ProductRepository extends CrudRepository<Product, UUID> {
-
     Iterable<Product> findAll(Specification<Product> spec);
 }
