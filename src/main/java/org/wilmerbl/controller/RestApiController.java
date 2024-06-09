@@ -27,16 +27,7 @@ public class RestApiController {
     public ResponseEntity<Iterable<Product>> getProducts(
             @RequestParam(required = false) Boolean productAvailability,
             @RequestParam(required = false) String price) {
-        if (price != null){
-            if(price.equals("ASC")) {
-                return new ResponseEntity<>(productService.findAllByOrderByPriceAsc(),
-                        HttpStatus.OK);
-            } else {
-                return new ResponseEntity<>(productService.findAllByOrderByPriceAsc(),
-                        HttpStatus.OK);
-            }
-        }
-        return new ResponseEntity<>(productService.findAll(), HttpStatus.OK);
+        return new ResponseEntity<>(productService.findByFirstName(price, 2.0) , HttpStatus.OK);
     }
 
 
